@@ -8,6 +8,10 @@ Example:
  * White box on top of blue box indicates the agent driving the behavior
  * Yello box to side indicates where the behavior happens. For multi-organism this is an ENVO term. For single-organism it is an anatomical location.
 
+This toy example shows a lion chasing an impala in the savanna, biting
+a chunk of flesh, swallowing, digesting and then defecating in a
+hedge (I couldn't find an ENVO term for the den of a lion).
+
 ## Requirements:
 
  * Protege 4
