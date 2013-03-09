@@ -43,16 +43,34 @@ ObjectProperty: BFO_0000060
 ObjectProperty: enabled_by
 
     
-ObjectProperty: RO_0002333
+ObjectProperty: BFO_0000063
+
+    Annotations: 
+        rdfs:label "precedes"
+    
+    
+ObjectProperty: BFO_0000050
+
+    
+Class: GO_0051704
+
+    
+Class: UBERON_0007268
 
     
 Class: UBERON_0011151
+
+    
+Class: ENVO_00000479
 
     
 Class: NBO_0000545
 
     
 Class: UBERON_0006925
+
+    
+Class: UBERON_0000341
 
     
 Class: ENVO_00000261
@@ -64,10 +82,10 @@ Class: GO_0003674
         rdfs:label "step (fake)"
     
     
-Class: ENVO_00000046
+Class: UBERON_0004482
 
     
-Class: UBERON_0004482
+Class: ENVO_00000046
 
     
 Class: UBERON_0000945
@@ -76,7 +94,7 @@ Class: UBERON_0000945
 Class: UBERON_0001367
 
     
-Class: NBO_0000079
+Class: GO_0008150
 
     
 Class: NBO_0000313
@@ -85,7 +103,10 @@ Class: NBO_0000313
         GO_0003674
     
     
-Class: GO_0008150
+Class: NBO_0000079
+
+    
+Class: GO_0007586
 
     
 Class: NBO_0000089
@@ -100,12 +121,21 @@ Individual: BULEGO0000005
         rdfs:label "defecating impala as poop"@en
     
     Types: 
-        RO_0002333 some UBERON_0001367,
+        enabled_by some UBERON_0001367,
         BFO_0000066 some ENVO_00000046,
         NBO_0000039
     
     Facts:  
-     BFO_0000060  BULEGO0000004
+     BFO_0000050  BULEGO0000006
+    
+    
+Individual: BULEGO0000006
+
+    Annotations: 
+        rdfs:label "hunting-feeding-pooping cycle"@en
+    
+    Types: 
+        GO_0051704
     
     
 Individual: BULEGO0000003
@@ -114,10 +144,13 @@ Individual: BULEGO0000003
         rdfs:label "swallowing chunk of flesh"@en
     
     Types: 
-        NBO_0000545
+        NBO_0000545,
+        BFO_0000066 some UBERON_0000341,
+        enabled_by some UBERON_0007268
     
     Facts:  
-     BFO_0000060  BULEGO0000002
+     BFO_0000063  BULEGO0000004,
+     BFO_0000050  BULEGO0000006
     
     
 Individual: BULEGO0000004
@@ -126,12 +159,14 @@ Individual: BULEGO0000004
         rdfs:label "digesting impala flesh"@en
     
     Types: 
-        RO_0002333 some UBERON_0006925,
-        NBO_0000313,
+        NBO_0000313
+         and (BFO_0000050 some GO_0007586),
+        enabled_by some UBERON_0006925,
         BFO_0000066 some UBERON_0000945
     
     Facts:  
-     BFO_0000060  BULEGO0000003
+     BFO_0000063  BULEGO0000005,
+     BFO_0000050  BULEGO0000006
     
     
 Individual: BULEGO0000001
@@ -140,9 +175,13 @@ Individual: BULEGO0000001
         rdfs:label "predation of impala by lion"@en
     
     Types: 
+        enabled_by some UBERON_0004482,
         BFO_0000066 some ENVO_00000261,
-        NBO_0000089,
-        RO_0002333 some UBERON_0004482
+        NBO_0000089
+    
+    Facts:  
+     BFO_0000063  BULEGO0000002,
+     BFO_0000050  BULEGO0000006
     
     
 Individual: BULEGO0000002
@@ -151,10 +190,12 @@ Individual: BULEGO0000002
         rdfs:label "biting chunk of flesh from impala"@en
     
     Types: 
-        RO_0002333 some UBERON_0011151,
-        NBO_0000079
+        NBO_0000079,
+        enabled_by some UBERON_0011151,
+        BFO_0000066 some ENVO_00000479
     
     Facts:  
-     BFO_0000060  BULEGO0000001
+     BFO_0000050  BULEGO0000006,
+     BFO_0000063  BULEGO0000003
     
     
