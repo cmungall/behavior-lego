@@ -1,0 +1,28 @@
+Prefix: : <http://purl.obolibrary.org/obo/>
+Prefix: i: <http://purl.obolibrary.org/obo/test/inst_>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://purl.obolibrary.org/obo/feed/test.owl>
+
+Import: <http://purl.obolibrary.org/obo/uberon.owl>
+Import: <http://purl.obolibrary.org/obo/nbo-simple.owl>
+Import: <http://purl.obolibrary.org/obo/ro.owl>
+
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#evidence>
+AnnotationProperty: rdfs:label
+
+    
+Class: GO_0003674
+  Annotations: rdfs:label "step (fake)"
+Class: NBO_0000313    
+  SubClassOf: GO_0003674
+
+    
+    

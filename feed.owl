@@ -1,0 +1,160 @@
+Prefix: : <http://purl.obolibrary.org/obo/>
+Prefix: i: <http://purl.obolibrary.org/obo/test/inst_>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://purl.obolibrary.org/obo/feed/test.owl>
+
+Import: <http://purl.obolibrary.org/obo/go.owl>
+Import: <http://purl.obolibrary.org/obo/envo.owl>
+Import: <http://purl.obolibrary.org/obo/nbo-simple.owl>
+Import: <http://purl.obolibrary.org/obo/uberon.owl>
+
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#evidence>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: BFO_0000066
+
+    Annotations: 
+        rdfs:label "occurs in"
+    
+    
+ObjectProperty: directly_activates
+
+    
+ObjectProperty: BFO_0000060
+
+    Annotations: 
+        rdfs:label "preceded by"
+    
+    
+ObjectProperty: enabled_by
+
+    
+ObjectProperty: RO_0002333
+
+    
+Class: UBERON_0011151
+
+    
+Class: NBO_0000545
+
+    
+Class: UBERON_0006925
+
+    
+Class: ENVO_00000261
+
+    
+Class: GO_0003674
+
+    Annotations: 
+        rdfs:label "step (fake)"
+    
+    
+Class: ENVO_00000046
+
+    
+Class: UBERON_0004482
+
+    
+Class: UBERON_0000945
+
+    
+Class: UBERON_0001367
+
+    
+Class: NBO_0000079
+
+    
+Class: NBO_0000313
+
+    SubClassOf: 
+        GO_0003674
+    
+    
+Class: GO_0008150
+
+    
+Class: NBO_0000089
+
+    
+Class: NBO_0000039
+
+    
+Individual: BULEGO0000005
+
+    Annotations: 
+        rdfs:label "defecating impala as poop"@en
+    
+    Types: 
+        RO_0002333 some UBERON_0001367,
+        BFO_0000066 some ENVO_00000046,
+        NBO_0000039
+    
+    Facts:  
+     BFO_0000060  BULEGO0000004
+    
+    
+Individual: BULEGO0000003
+
+    Annotations: 
+        rdfs:label "swallowing chunk of flesh"@en
+    
+    Types: 
+        NBO_0000545
+    
+    Facts:  
+     BFO_0000060  BULEGO0000002
+    
+    
+Individual: BULEGO0000004
+
+    Annotations: 
+        rdfs:label "digesting impala flesh"@en
+    
+    Types: 
+        RO_0002333 some UBERON_0006925,
+        NBO_0000313,
+        BFO_0000066 some UBERON_0000945
+    
+    Facts:  
+     BFO_0000060  BULEGO0000003
+    
+    
+Individual: BULEGO0000001
+
+    Annotations: 
+        rdfs:label "predation of impala by lion"@en
+    
+    Types: 
+        BFO_0000066 some ENVO_00000261,
+        NBO_0000089,
+        RO_0002333 some UBERON_0004482
+    
+    
+Individual: BULEGO0000002
+
+    Annotations: 
+        rdfs:label "biting chunk of flesh from impala"@en
+    
+    Types: 
+        RO_0002333 some UBERON_0011151,
+        NBO_0000079
+    
+    Facts:  
+     BFO_0000060  BULEGO0000001
+    
+    
