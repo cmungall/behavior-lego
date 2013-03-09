@@ -12,6 +12,9 @@ This toy example shows a lion chasing an impala in the savanna, biting
 a chunk of flesh, swallowing, digesting and then defecating in a
 hedge (I couldn't find an ENVO term for the den of a lion).
 
+There is a bit of weirdness due to the lack of digestion process in
+NBO.
+
 ## Requirements:
 
  * Protege 4
