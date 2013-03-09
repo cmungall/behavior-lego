@@ -11,18 +11,58 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 Ontology: <http://purl.obolibrary.org/obo/feed/test.owl>
 
-Import: <http://purl.obolibrary.org/obo/uberon.owl>
+Import: <http://purl.obolibrary.org/obo/go.owl>
+Import: <http://purl.obolibrary.org/obo/envo.owl>
 Import: <http://purl.obolibrary.org/obo/nbo-simple.owl>
-Import: <http://purl.obolibrary.org/obo/ro.owl>
+Import: <http://purl.obolibrary.org/obo/uberon.owl>
 
 AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#evidence>
+
+    
 AnnotationProperty: rdfs:label
 
     
-Class: GO_0003674
-  Annotations: rdfs:label "step (fake)"
-Class: NBO_0000313    
-  SubClassOf: GO_0003674
+Datatype: rdf:PlainLiteral
 
+    
+ObjectProperty: BFO_0000066
+
+    Annotations: 
+        rdfs:label "occurs in"
+    
+    
+ObjectProperty: directly_activates
+
+    
+ObjectProperty: BFO_0000060
+
+    Annotations: 
+        rdfs:label "preceded by"
+    
+    
+ObjectProperty: enabled_by
+
+    
+ObjectProperty: BFO_0000063
+
+    Annotations: 
+        rdfs:label "precedes"
+    
+    
+ObjectProperty: BFO_0000050
+
+    
+    
+Class: GO_0003674
+
+    Annotations: 
+        rdfs:label "step (fake)"
+    
+   
+    
+Class: NBO_0000313
+
+    SubClassOf: 
+        GO_0003674
     
     
